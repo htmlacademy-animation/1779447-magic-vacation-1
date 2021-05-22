@@ -94,6 +94,11 @@
   font-size: 2.4rem;
   line-height: 1.27;
 
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(40px);
+  transition-delay: 0.5s;
+
   @media (min-width: $stop-scaling) {
     width: 509px;
     font-size: 24px;
@@ -135,6 +140,13 @@
   }
 }
 
+.active {
+  .intro__message {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .intro__label {
   margin: 0 0 1.6rem;
   max-width: 25rem;
@@ -148,6 +160,8 @@
     font-size: 24px;
   }
 }
+
+
 
 .intro__date {
   margin: 0 0 0 -0.5rem;
