@@ -6,6 +6,11 @@
       opacity: 1;
       pointer-events: auto;
     }
+
+    .social-block__link {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -90,6 +95,8 @@
   opacity: 0;
   pointer-events: none;
 
+  transition: opacity 0.1s;
+
   @media (min-width: $stop-scaling) {
     margin-top: 15px;
   }
@@ -157,6 +164,18 @@
     @media (max-width: $mobile) and (orientation: landscape) {
       margin: 0 1.25rem;
     }
+
+    &:nth-of-type(2) {
+      .social-block__link {
+        transition-delay: 0.1s;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .social-block__link {
+        transition-delay: 0.2s;
+      }
+    }
   }
 }
 
@@ -168,6 +187,10 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  opacity: 0;
+
+  transition: all 0.3s;
+  transform: translateY(14px);
 
   @media (min-width: $stop-scaling) {
     width: 40px;
