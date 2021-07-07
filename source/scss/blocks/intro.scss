@@ -97,7 +97,7 @@
   transition: all 1s;
   opacity: 0;
   transform: translateY(40px);
-  transition-delay: 0.5s;
+  transition-delay: $keyframe1;
 
   @media (min-width: $stop-scaling) {
     width: 509px;

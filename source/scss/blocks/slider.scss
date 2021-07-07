@@ -38,7 +38,7 @@
 
   &:nth-child(even) {
     .slider__item-text {
-      transition-delay: 1s;
+      transition-delay: $keyframe2;
 
       align-self: flex-end;
 
@@ -101,7 +101,7 @@
 
   transform: translateX(40px);
   transition: all 0.6s;
-  transition-delay: 0.6s;
+  transition-delay: $keyframe1;
   opacity: 0;
 
   @media (min-width: $stop-scaling) {
